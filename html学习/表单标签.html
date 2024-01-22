@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <form><!--action="#" method="POST" name="form1"-->
+        <!--text 文本框 用户可以输入任何文字-->
+
+        <label for="username">用户名:</label>
+        <input type="text" name="username" id="username" maxlength="10"> <br>
+        <!--text 密码框 用户看不见输入的密码-->
+        密码：<input type="password" name="password" maxlength="20"><br>
+        <!--radio 单选按钮 多选一-->
+        <!--name是表单元素名字 性别单选按钮必须有相同的name 才可以实现多选一-->
+        <!--value是表单元素的值  男的value是男  女的value是女-->
+        <!--checked是表单元素是否选中  checked="checked" 表示选中  checked="unchecked" 表示未选中-->
+        性别: <label for="n">男</label><input type="radio" name="sex" id="n" value="男" checked="checked">
+        <label for="f">女</label><input type="radio" name="sex" id="f" value="女"><br>
+        <!--checkbox 复选框 可以多选-->
+        爱好：
+        打篮球<input type="checkbox" name="hobby">
+        踢足球 <input type="checkbox" name="hobby" checked="checked">
+        玩游戏<input type="checkbox" name="hobby"><br>
+        <!--点击了提交按钮，可以把 表单域form里面的表单元素 里面的值 提交给后台服务器-->
+        <input type="submit" value="快速注册">
+        <!--reset 重置表单 h还原表单初始的默认状态 -->
+        <input type="reset" value="重新填写">
+        <!--普通按钮 结合js使用-->
+        <input type="button" value="获取验证码"><br>
+        <!--file 文件域 可以文件上传 上传文件到服务器-->
+        上传头像：<input type="file"><br>
+        <!--select 下拉框  选择一个值--->
+
+        籍贯：<select>
+            <option>湖北</option>
+            <option selected="selected">湖南</option>
+            <option>广东</option>
+        </select><br>
+        <!--textarea 多行文本框 用户可以输入多行文字-->
+        今日反馈：<textarea name="content" cols="30" rows="10">默认文字</textarea><br>
+
+    </form>
+</body>
+
+</html>
